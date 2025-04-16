@@ -1,5 +1,5 @@
 ((_t)=>{
-  _t.domain="https://aff-happylife.com";
+  _t.domain="https://ram.tcc-coin.com";
   _t.postData=async(url = '', data = {})=>{
     var dataP = {
       method: 'POST',
