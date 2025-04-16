@@ -1,0 +1,182 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="theme-color" content="#e58a42">
+    <title>Profile</title>
+    <link href="https://tcc-coin.com/svg/logo.svg" rel="shortcut icon" type="image/x-icon" />
+    <meta property="og:image" content="https://tcc-coin.com/svg/logo.svg" />
+    <link rel="stylesheet" href="https://dev.tcc-coin.com/koart3it5oaxirqf/css/all.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <!--<script src="/js/tafalo5_nextsdk_node2.js"></script>-->
+    <script src="/js/tafalo5nextsdk.js"></script>
+    <script src="/koart3it5oaxirqf/js/nextsdk.js" type="text/javascript"></script>
+    <script src="/js/basic3.js" type="text/javascript"></script>
+    <script src="/js/icon.js"></script>
+    
+  </head>
+  <body class="bg-main">
+    <header id="header" class="w100 df pf top-0">
+      <div class="nav_icon df aic mr-auto" id="menu">
+        <div class="w100 fl">
+          <div class="line1"></div>
+          <div class="line1"></div>
+          <div class="line1"></div>
+        </div>
+      </div>
+      <div class="df aic m-auto">
+
+      </div>
+      <div class="nav_icon df aic ml-auto" id="lang">
+        <div class="tc">
+          <div class="circle_icon pr">
+            <div class="elip_icon pa"></div>
+            <div class="line1"></div>
+            <div class="line1"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="w100 fl" >
+      <div id="frm-reg" class="mt50 p20"></div>
+    </section>
+    <footer class="footer w100 pf bottom-0 tc">
+
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/gh/subins2000/p2pt/dist/p2pt.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    
+    <script src="/js/app.js" type="text/javascript"></script>
+    <script src="/js/networks.js"></script>
+    
+    <script> 
+      //document.querySelector("#frm-reg").innerHTML="This function is Maintenance!";
+      
+      conti();
+      function re1(){
+        window.time1=Date.now();
+        let re=`<div>
+      	<div class="df aic jcc w100 fs20">
+        <div class="" id="a">`+Math.floor(Math.random()*20)+`</div> + <div class="" id="b">`+Math.floor(20+Math.random()*10)+`</div> = 
+        <input type="number"/ id="res1" class="w68p p5 fs20 ms5 bdr5">
+      </div>
+      	<div class="w100 mt10 df jcc"><div class="aic df btn fwb tc cf p10" onclick="conti()">Continue</div></div>
+      </div>`;
+        document.querySelector("#frm-reg").innerHTML=re;
+      }
+      function conti(){
+        if(false && Number(a.innerText)+Number(b.innerText)!=Number(res1.value)||(Date.now()-window.time1<5000)){
+          re1();
+        }else{
+          let re=`<table class="w100 cg">
+          <tbody>
+            <tr>
+              <td colspan="2" class="fs20 fwb color">Name</td>
+      </tr>
+            <tr>
+              <td colspan="2">
+                <div class="w100 dg col-3">
+                  <div>
+                    <div>First name</div>
+                    <div class="me5 mt5"><input class="w100 df p10 bdr5" name="firstname" id="firstname"></div>
+      </div>
+                  <div>
+                    <div class="ms5">Middle name</div>
+                    <div class="me5 ms5 mt5"><input class="w100 df p10 bdr5" name="middlename" id="middlename"></div>
+      </div>
+                  <div>
+                    <div class="ms5">Last name</div>
+                    <div class="ms5 mt5"><input class="w100 df p10 bdr5" name="lastname" id="lastname"></div>
+      </div>
+      </div>
+      </td>
+      </tr>
+            <tr>
+              <td colspan="2" class="fs20 fwb color">Account</td>
+      </tr>
+            <tr>
+              <td>Username</td>
+              <td><input type="email" class="w96 p2r bdr5" name="user" id="user"></td>
+      </tr>
+            <tr>
+              <td>Password</td>
+              <td><input type="password" class="w96 p2r bdr5" name="pwd" id="pwd"></td>
+      </tr>
+            <tr>
+              <td>Confirm Password</td>
+              <td><input type="password" class="w96 p2r bdr5" name="re_pwd" id="re_pwd"></td>
+      </tr>
+            <tr>
+              <td colspan="2" class="fs20 fwb color">Other Info</td>
+      </tr>
+            <tr>
+              <td>Email</td>
+              <td><input type="email" class="w96 p2r bdr5" name="email" id="email"></td>
+      </tr>
+            <tr>
+              <td>Phone</td>
+              <td><input class="w96 p2r bdr5" name="phone" id="phone"></td>
+      </tr>
+            <tr>
+              <td colspan="2" class="fs20 fwb color">Invitation</td>
+      </tr>
+            <tr>
+              <td>Invitation code</td>
+              <td><input class="w96 p2r bdr5" type="email" name="ref" id="ref"></td>
+      </tr>
+      <tr style="display:none">
+              <td></td>
+              <td><img height="23" alt="" id="icaptcha"></td>
+      </tr>
+      <tr style="display:none">
+              <td>Captcha</td>
+              <td><input class="w96 p2r bdr5" type="email" name="captcha" id="captcha" data-id=""></td>
+      </tr>
+            <tr>
+              <td colspan="2" class="tc"><div class="mt10 di">
+                <div class="aic df btn fwb tc cf p10 btnsu">
+                  <img class="me5" height="18" src="/svg/save.svg">Signup</div>
+      </div>
+                <div class="cg mt10">Join to the TCC Netkork</div>
+      </td>
+      </tr>
+      <tr>
+              <td colspan="2" class="tc">
+              <div class="mt10 di">
+                <div class="aic df btn3 fwb tc cf p10 " onclick="location.href='/'">Back</div>
+      </div>
+      </td>
+      </tr>
+      </tbody>
+      </table>`;
+          document.querySelector("#frm-reg").innerHTML=re;
+          recaptcha();
+          document.querySelector("#frm-reg .btnsu").onclick=()=>{
+            ntc.register('#frm-reg',rs=>{
+              recaptcha();
+            })
+          }
+          function recaptcha(){
+            fetch("https://network.tcc-coin.com/gen-captchar?lang="+"en", {
+              method: "GET"
+            }).then(r=>r.json()).then(r=>{
+              document.querySelector("#frm-reg #icaptcha").src=`data:image/png;base64,${r.text}`;
+              document.querySelector("#frm-reg #captcha").dataset.id=r.id;
+            });
+          }
+          window.addEventListener("load",function(){
+            window.ref.value = tfl.cookie("referral")||"";
+            setTimeout(()=>{
+              document.querySelectorAll("#loading").forEach(el=>{
+                el.classList.add("dn");
+              })
+            },1000);
+          });
+        }
+      }
+
+    </script>
+  </body>
+</html>
